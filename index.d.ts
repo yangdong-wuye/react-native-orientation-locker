@@ -32,7 +32,7 @@ export interface OrientationLockerProps {
   onDeviceChange?: (deviceOrientation: OrientationType) => void;
 }
 
-export type OrientationLocker = React.ComponentType<OrientationLockerProps>;
+export class OrientationLocker extends React.Component<OrientationLockerProps> {};
 
 declare class Orientation {
   static addOrientationListener(callback: (orientation: OrientationType) => void): void;
